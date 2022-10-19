@@ -1,0 +1,25 @@
+@use "../variables" as *;
+@use "../resets" as *;
+
+// -------------\\
+// * ANIMATIONS
+// -------------\\
+
+// * wobble
+@keyframes wobble {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(0.1turn);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  75% {
+    transform: rotate(-0.1turn);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}

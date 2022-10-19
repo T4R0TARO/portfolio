@@ -1,0 +1,91 @@
+@use "../variables" as *;
+
+// -------------------------- \\
+// * CONTACT
+// --------------------------- \\
+
+.contact-card {
+  background: $dark-purple;
+  padding: 50px 25px;
+  border-radius: $radius-20;
+  max-width: 800px;
+  margin: auto;
+}
+
+.contact-card .card-subtitle {
+  color: $pinkish-purple;
+  font-family: $ff-barlow;
+  font-size: $fs-4;
+  font-weight: $fw-600;
+  text-align: center;
+}
+
+.contact .section-title {
+  margin-block-end: 30px;
+}
+
+.contact-form {
+  margin-block-end: 50px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-item:not(:last-child) {
+  margin-block-end: 20px;
+}
+
+.contact-icon {
+  background: $medium-purple;
+  font-size: 2.4rem;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.contact-item-title {
+  color: $white;
+  font-family: $ff-barlow;
+  font-size: $fs-4;
+  font-weight: $fw-600;
+}
+
+.contact-item-link {
+  transition: $transition-1;
+}
+
+.contact-item-link:not(address):is(:hover, :focus) {
+  color: $white;
+}
+
+// -----------------\\
+// * MEDIA QUERIES
+// -----------------\\
+
+@media (min-width: 992px) {
+  .contact-card {
+    padding: 100px;
+    max-width: 100%;
+  }
+  .contact .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+  .contact-form {
+    margin-block-end: 0;
+  }
+  .contact-item {
+    gap: 25px;
+  }
+  .contact-icon {
+    padding: 30px;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

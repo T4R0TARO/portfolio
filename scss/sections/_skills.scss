@@ -1,0 +1,43 @@
+@use "../variables" as *;
+
+// -------------------------- \\
+// * SKILLS
+// --------------------------- \\
+
+.skills .section-title {
+  margin-block-end: 20px;
+}
+
+.skills .section-text {
+  margin-block-end: 70px;
+}
+
+.skills-list {
+  display: grid;
+  gap: 25px;
+}
+
+.skills-item .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block-end: 10px;
+}
+
+// -----------------\\
+// * MEDIA QUERIES
+// -----------------\\
+
+@media (min-width: 768px) {
+  .skills-list,
+  .blog-list {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .skills-list {
+    column-gap: 100px;
+  }
+}

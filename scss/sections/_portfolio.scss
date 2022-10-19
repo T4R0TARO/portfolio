@@ -1,0 +1,97 @@
+@use "../variables" as *;
+
+// -------------------------- \\
+// * PORTFOLIO
+// --------------------------- \\
+
+.portfolio .section-title {
+  margin-block-end: 18px;
+}
+
+.portfolio .section-text {
+  margin-block-end: 80px;
+}
+
+.portfolio-list {
+  display: grid;
+  gap: 60px;
+}
+
+.portfolio-card {
+  background: $independence;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 120px 20px;
+  border-radius: $radius-20;
+  font-family: $ff-barlow;
+  color: $white;
+  font-weight: $fw-600;
+  transition: $transition-2;
+}
+
+.portfolio-list > li:nth-child(even) .card-content {
+  margin-inline-start: auto;
+}
+
+.portfolio-card .card-subtitle {
+  color: $pinkish-purple;
+  margin-block-end: 5px;
+}
+
+.portfolio-card .card-title {
+  max-width: 20ch;
+  margin-block-end: 20px;
+}
+
+.portfolio-card .btn-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: $fs-5;
+  text-transform: uppercase;
+  margin-block-end: 15px;
+}
+
+.portfolio-card .btn-link:is(:hover, :focus) {
+  color: $pinkish-purple;
+}
+
+.portfolio-card .btn-link i {
+  color: $pinkish-purple;
+  font-size: 1.6rem;
+}
+
+// -----------------\\
+// * MEDIA QUERIES
+// -----------------\\
+
+// responsive for large than 600px
+
+@media (min-width: 600px) {
+  .portfolio-list li:nth-child(even) .card-content {
+    margin-inline-start: 50%;
+  }
+}
+
+// responsive for larger than 600px screen
+
+@media (min-width: 768px) {
+  .portfolio-card {
+    background-size: 115%;
+    padding-inline: 80px;
+  }
+
+  .portfolio-card:is(:hover, :focus) {
+    background-size: 130%;
+  }
+}
+
+@media (min-width: 992px) {
+  .portfolio-card .card-subtitle {
+    font-size: $fs-5;
+  }
+  .portfolio-card .btn-link {
+    font-size: 1.6rem;
+  }
+}

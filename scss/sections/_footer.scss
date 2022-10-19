@@ -1,0 +1,64 @@
+@use "../variables" as *;
+
+// -------------------------- \\
+// * FOOTER
+// --------------------------- \\
+
+.footer {
+  background: $independence;
+  padding-block: 60px;
+}
+
+.copyright {
+  max-width: max-content;
+  margin-inline: auto;
+  margin-block-end: 10px;
+}
+
+.copyright-link {
+  display: inline-block;
+  transition: $transition-2;
+  font-weight: $fw-600;
+}
+
+.copyright-link:is(:hover, :focus) {
+  color: $white;
+}
+
+.footer-list {
+  max-width: max-content;
+  margin-inline: auto;
+}
+
+.footer-list * {
+  display: inline-block;
+}
+
+.footer-list > li:not(:last-child) {
+  margin-inline-end: 40px;
+}
+
+.footer-link {
+  transition: $transition-2;
+}
+
+.footer-link:is(:hover, :focus) {
+  color: $white;
+}
+
+// -----------------\\
+// * MEDIA QUERIES
+// -----------------\\
+
+@media (min-width: 992px) {
+  .footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .copyright,
+  .footer-list {
+    margin-inline: 0;
+  }
+}
