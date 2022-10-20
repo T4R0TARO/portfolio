@@ -135,7 +135,7 @@ body {
 
 @media (min-width: 992px) {
   .container {
-    max-width: 1050px;
+    max-width: 80%;
     margin-inline: auto;
   }
 }
@@ -712,9 +712,9 @@ body {
   transition: 0.25s ease;
 }
 
-header .btn-primary {
+.download {
   height: 46px;
-  width: 100%;
+  width: 200px;
 }
 
 .btn.btn-primary.purple {
