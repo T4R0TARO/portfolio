@@ -712,6 +712,11 @@ body {
   transition: 0.25s ease;
 }
 
+header .btn-primary {
+  height: 46px;
+  width: 100%;
+}
+
 .btn.btn-primary.purple {
   background: hsl(266deg, 32%, 64%);
 }

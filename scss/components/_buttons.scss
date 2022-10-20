@@ -16,6 +16,11 @@
   transition: $transition-2;
 }
 
+header .btn-primary {
+  height: 46px;
+  width: 100%;
+}
+
 .btn.btn-primary.purple {
   background: $medium-purple;
 }
