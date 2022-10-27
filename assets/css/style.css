@@ -105,7 +105,7 @@ body {
 }
 
 .section-subtitle {
-  color: hsl(327deg, 43%, 79%);
+  color: hsl(214deg, 23%, 56%);
   font-family: "Barlow", sans-serif;
   font-size: 2rem;
   text-align: center;
@@ -208,7 +208,7 @@ body {
 }
 
 .navbar-link:is(:hover, :focus) {
-  color: hsl(327deg, 43%, 79%);
+  color: hsl(214deg, 23%, 56%);
 }
 
 @media (min-width: 992px) {
@@ -295,7 +295,7 @@ body {
 }
 
 .hero-title span {
-  color: hsl(327deg, 43%, 79%);
+  color: hsl(214deg, 23%, 56%);
 }
 
 .hero-title strong {
@@ -486,7 +486,7 @@ body {
 }
 
 .portfolio-card .card-subtitle {
-  color: hsl(327deg, 43%, 79%);
+  color: hsl(214deg, 23%, 56%);
   margin-block-end: 5px;
 }
 
@@ -505,11 +505,11 @@ body {
 }
 
 .portfolio-card .btn-link:is(:hover, :focus) {
-  color: hsl(327deg, 43%, 79%);
+  color: hsl(214deg, 23%, 56%);
 }
 
 .portfolio-card .btn-link i {
-  color: hsl(327deg, 43%, 79%);
+  color: hsl(214deg, 23%, 56%);
   font-size: 1.6rem;
 }
 
@@ -568,7 +568,7 @@ body {
   }
 }
 .contact-card {
-  background: hsl(250deg, 26%, 44%);
+  background: hsl(211deg, 53%, 11%);
   padding: 50px 25px;
   border-radius: 20px;
   max-width: 800px;
@@ -576,7 +576,7 @@ body {
 }
 
 .contact-card .card-subtitle {
-  color: hsl(327deg, 43%, 79%);
+  color: hsl(214deg, 23%, 56%);
   font-family: "Barlow", sans-serif;
   font-size: 2rem;
   font-weight: 600;
@@ -602,7 +602,7 @@ body {
 }
 
 .contact-icon {
-  background: hsl(266deg, 32%, 64%);
+  background: hsl(212deg, 29%, 36%);
   font-size: 2.4rem;
   padding: 20px;
   border-radius: 50%;
@@ -718,15 +718,15 @@ body {
 }
 
 .btn.btn-primary.purple {
-  background: hsl(266deg, 32%, 64%);
+  background: hsl(212deg, 29%, 36%);
 }
 
 .btn.btn-primary.purple:is(:hover, :focus) {
-  background: hsl(327deg, 43%, 79%);
+  background: hsl(214deg, 23%, 56%);
 }
 
 .navbar .btn {
-  background: hsl(327deg, 43%, 79%);
+  background: hsl(214deg, 23%, 56%);
   margin-block-start: 15px;
 }
 
@@ -743,15 +743,15 @@ body {
   gap: 10px;
 }
 .btn-group .btn {
-  background: hsl(327deg, 43%, 79%);
+  background: hsl(214deg, 23%, 56%);
 }
 
 .btn-group .btn:is(:hover, :focus) {
-  background: hsl(266deg, 32%, 64%);
+  background: hsl(212deg, 29%, 36%);
 }
 
 .btn-submit {
-  background: hsl(327deg, 43%, 79%);
+  background: hsl(214deg, 23%, 56%);
   color: hsl(0deg, 0%, 100%);
   font-family: "Barlow", sans-serif;
   font-size: 1.8rem;
