@@ -10,6 +10,7 @@
   border-radius: $radius-20;
   max-width: 800px;
   margin: auto;
+  box-shadow: 0px 0px 10px #070707;
 }
 
 .contact-card .card-subtitle {
@@ -40,15 +41,15 @@
 
 .contact-icon {
   background: $medium-purple;
-  font-size: 2.4rem;
-  padding: 20px;
   border-radius: 50%;
+  padding: 1rem;
+  font-size: 1.5rem;
 }
 
 .contact-item-title {
   color: $white;
   font-family: $ff-barlow;
-  font-size: $fs-4;
+  font-size: 1.5rem;
   font-weight: $fw-600;
 }
 
@@ -66,7 +67,7 @@
 
 @media (min-width: 992px) {
   .contact-card {
-    padding: 100px;
+    padding: 4rem;
     max-width: 100%;
   }
   .contact .wrapper {
@@ -79,9 +80,6 @@
   }
   .contact-item {
     gap: 25px;
-  }
-  .contact-icon {
-    padding: 30px;
   }
   .wrapper {
     display: flex;

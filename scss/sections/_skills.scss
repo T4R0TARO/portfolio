@@ -14,7 +14,7 @@
 
 .skills-list {
   display: grid;
-  gap: 25px;
+  gap: 1rem;
 }
 
 .skills-item .wrapper {
@@ -24,20 +24,23 @@
   margin-block-end: 10px;
 }
 
+.wrapper img {
+  height: auto;
+  width: 50px;
+}
+
 // -----------------\\
 // * MEDIA QUERIES
 // -----------------\\
 
-@media (min-width: 768px) {
-  .skills-list,
-  .blog-list {
+@media (min-width: 400px) {
+  .skills-list {
     grid-template-columns: 1fr 1fr;
-    column-gap: 50px;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .skills-list {
-    column-gap: 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
