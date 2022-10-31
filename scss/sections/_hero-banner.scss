@@ -119,19 +119,25 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    background: $white;
+    // background: $white;
     border-radius: $radius-10;
     padding: 20px;
   }
 
   .elem-1 {
     top: 20px;
-    left: -130px;
+    left: -90px;
   }
 
   .elem-2 {
     bottom: 30px;
     right: -80px;
+  }
+
+  .elem-2 img,
+  .elem-1 img {
+    height: 150px;
+    width: auto;
   }
 
   .elem-title {
