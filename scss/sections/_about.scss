@@ -54,6 +54,7 @@
 @media (min-width: 992px) {
   .about {
     padding-block: 100px;
+    text-align: center;
   }
 
   .about .container {
@@ -65,8 +66,9 @@
 
   .about-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 5rem;
+    text-align: center;
   }
 
   .about-banner {
