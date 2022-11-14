@@ -237,11 +237,6 @@ body {
     justify-content: end;
   }
 }
-.elem,
-.rotate-img {
-  display: none;
-}
-
 .hero {
   position: relative;
   background-repeat: no-repeat;
@@ -266,21 +261,6 @@ body {
   left: 0px;
   opacity: 0.2;
   z-index: -1;
-}
-
-.hero-banner {
-  width: 150px;
-  height: 150px;
-  background-color: hsl(225deg, 24%, 27%);
-  border-radius: 10px;
-  margin-inline: auto;
-  margin-block-end: 30px;
-  border-radius: 50%;
-}
-
-.hero-banner img {
-  object-fit: cover;
-  border-radius: inherit;
 }
 
 .hero-content {
@@ -314,7 +294,7 @@ body {
 @media (min-width: 992px) {
   .hero .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     align-items: center;
   }
   .hero-content {
@@ -330,79 +310,9 @@ body {
     font-size: 2.2rem;
     margin-block-end: 25px;
   }
-  .hero-banner {
-    position: relative;
-    margin-block-end: 0;
-    order: 1;
-    width: 340px;
-    height: 340px;
-    margin-inline: 0;
-    margin-inline-start: auto;
-  }
-  .elem {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    border-radius: 10px;
-    padding: 20px;
-  }
-  .elem-1 {
-    top: 20px;
-    left: -90px;
-  }
-  .elem-2 {
-    bottom: 30px;
-    right: -80px;
-  }
-  .elem-2 img,
-.elem-1 img {
-    height: 150px;
-    width: auto;
-  }
-  .elem-title {
-    font-size: 3.5rem;
-  }
-  .elem-text {
-    max-width: 10ch;
-    color: hsl(0deg, 0%, 0%);
-    font-weight: 700;
-    line-height: 1.1;
-  }
-  .elem-3 {
-    top: -40px;
-    right: -30px;
-  }
-  .elem-3 i {
-    color: #231942;
-    font-size: 5rem;
-  }
-  .rotate-img {
-    display: block;
-    position: absolute;
-    bottom: -40px;
-    left: -60px;
-    width: 100px;
-    animation: wobble 15s linear infinite reverse;
-  }
 }
-.abs-img,
-.abs-icon {
-  display: none;
-}
-
 .about {
   padding-block-start: 120px;
-}
-
-.about-banner {
-  background: hsl(225deg, 24%, 27%);
-  border-radius: 10px;
-  margin-block-end: 30px;
-}
-
-.about-banner > .img-cover {
-  border-radius: inherit;
 }
 
 .about :is(.section-title, .section-subtitle, .section-text) {
@@ -413,30 +323,31 @@ body {
   margin-block-end: 30px;
 }
 
-.img-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 7rem;
-  object-fit: cover;
-  height: 500px;
-  width: auto;
+.pfp-container {
+  width: 200px;
+  height: 200px;
+  background-color: hsl(225deg, 24%, 27%);
+  border-radius: 10px;
+  border: 4px solid rgba(87, 5, 87, 0.384);
+  margin-inline: auto;
+  margin-block-end: 50px;
+  border-radius: 50%;
 }
 
-.img-container img {
-  width: 100%;
+.pfp-container img {
+  object-fit: cover;
   height: 100%;
-  object-fit: contain;
+  width: 100%;
+  border-radius: inherit;
 }
 
 @media (min-width: 992px) {
   .about {
     padding-block: 100px;
-    text-align: center;
   }
   .about .container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 80px;
   }
@@ -446,42 +357,9 @@ body {
     gap: 5rem;
     text-align: center;
   }
-  .about-banner {
-    position: relative;
-    margin-block-end: 0;
-  }
-  .abs-img,
-.abs-icon {
-    display: block;
-    position: absolute;
-  }
-  .abs-img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: inherit;
-    bottom: -150px;
-    left: -100px;
-  }
-  .abs-icon {
-    font-size: 5rem;
-    padding: 20px;
-    border-radius: inherit;
-  }
-  .abs-icon-1 {
-    top: 50px;
-    left: -120px;
-    background: hsl(12deg, 78%, 52%);
-  }
-  .abs-icon-2 {
-    top: -40px;
-    left: -40px;
-    background: hsl(213deg, 68%, 41%);
-  }
-  .abs-icon-3 {
-    top: -90px;
-    left: 250px;
-    background: hsl(53deg, 93%, 54%);
+  .pfp-container {
+    width: 350px;
+    height: 350px;
   }
 }
 .portfolio {
@@ -498,6 +376,7 @@ body {
 
 .portfolio-list {
   display: grid;
+  grid-template-columns: 1fr;
   gap: 60px;
 }
 
@@ -547,16 +426,7 @@ body {
   font-size: 1.6rem;
 }
 
-@media (min-width: 600px) {
-  .portfolio-list li:nth-child(even) .card-content {
-    margin-inline-start: 50%;
-  }
-}
 @media (min-width: 768px) {
-  .portfolio-card {
-    background-size: 115%;
-    padding-inline: 80px;
-  }
   .portfolio-card:is(:hover, :focus) {
     background-size: 130%;
   }
@@ -567,6 +437,11 @@ body {
   }
   .portfolio-card .btn-link {
     font-size: 1.6rem;
+  }
+}
+@media (min-width: 1158px) {
+  .portfolio-list {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 .skills .section-title {

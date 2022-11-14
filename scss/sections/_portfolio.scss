@@ -17,6 +17,7 @@
 
 .portfolio-list {
   display: grid;
+  grid-template-columns: 1fr;
   gap: 60px;
 }
 
@@ -72,19 +73,19 @@
 
 // responsive for large than 600px
 
-@media (min-width: 600px) {
-  .portfolio-list li:nth-child(even) .card-content {
-    margin-inline-start: 50%;
-  }
-}
+// @media (min-width: 600px) {
+//   .portfolio-list li:nth-child(even) .card-content {
+//     margin-inline-start: 50%;
+//   }
+// }
 
 // responsive for larger than 600px screen
 
 @media (min-width: 768px) {
-  .portfolio-card {
-    background-size: 115%;
-    padding-inline: 80px;
-  }
+  // .portfolio-card {
+  //   background-size: 115%;
+  //   padding-inline: 80px;
+  // }
 
   .portfolio-card:is(:hover, :focus) {
     background-size: 130%;
@@ -92,10 +93,19 @@
 }
 
 @media (min-width: 992px) {
+  // .portfolio-list {
+  //   grid-template-columns: 1fr 1fr 1fr;
+  // }
   .portfolio-card .card-subtitle {
     font-size: $fs-5;
   }
   .portfolio-card .btn-link {
     font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1158px) {
+  .portfolio-list {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
