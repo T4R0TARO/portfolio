@@ -15,21 +15,6 @@
   place-items: center;
 }
 
-.hero::before {
-  content: "";
-  background-image: url("../../images/plant-bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.2;
-  z-index: -1;
-}
-
 .hero-content {
   text-align: center;
   color: $white;
