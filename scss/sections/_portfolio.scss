@@ -87,15 +87,12 @@
   //   padding-inline: 80px;
   // }
 
-  .portfolio-card:is(:hover, :focus) {
-    background-size: 130%;
-  }
+  // .portfolio-card:is(:hover, :focus) {
+  //   background-size: 130%;
+  // }
 }
 
 @media (min-width: 992px) {
-  // .portfolio-list {
-  //   grid-template-columns: 1fr 1fr 1fr;
-  // }
   .portfolio-card .card-subtitle {
     font-size: $fs-5;
   }
